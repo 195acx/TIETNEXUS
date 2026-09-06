@@ -1,10 +1,11 @@
 /* =========================
    DESIGN SYSTEM
 ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
 
-    --black: #1B1717;
+    --black: #080808;
     --cream: #EDEBDD;
     --maroon: #630000;
     --cherry: #810100;
@@ -38,10 +39,7 @@ body {
     background: var(--black);
     color: var(--cream);
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 
     min-height: 100vh;
 }
@@ -318,29 +316,27 @@ a {
 }
 
 
-.logo-placeholder {
+.logo-core {
+    width: 230px;
+    height: 230px;
 
-    width: 190px;
-
-    height: 190px;
-
-    background: var(--maroon);
+    border: 1px solid rgba(237, 235, 221, 0.18);
+    border-radius: 50%;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
-    font-size: 6rem;
+    overflow: hidden;
+    position: relative;
+}
 
-    font-weight: 700;
+.logo-core img {
+    width: 65%;
+    height: 65%;
 
-    box-shadow:
-
-        0 40px 100px
-
-        rgba(129, 1, 0, 0.25);
+    object-fit: contain;
+    display: block;
 }
 
 
