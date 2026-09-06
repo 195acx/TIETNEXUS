@@ -352,18 +352,7 @@ a {
 }
 
 
-.scroll-indicator {
 
-    position: fixed;
-
-    bottom: 2rem;
-
-    font-size: 0.65rem;
-
-    letter-spacing: 0.15em;
-
-    color: var(--muted-cream);
-}
 
 
 /* =========================
