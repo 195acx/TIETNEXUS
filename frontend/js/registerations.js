@@ -25,7 +25,7 @@ async function loadRegistrations() {
 
         const response =
             await fetch(
-                "http://127.0.0.1:8000/registrations/me",
+                "https://tietnexus-api.onrender.com/registrations/me",
                 {
                     headers: {
                         "Authorization":

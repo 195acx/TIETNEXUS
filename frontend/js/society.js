@@ -67,7 +67,7 @@ async function loadSociety() {
     try {
 
         const response = await fetch(
-            `http://127.0.0.1:8000/societies/${societyId}`
+            `https://tietnexus-api.onrender.com/societies/${societyId}`
         );
 
 

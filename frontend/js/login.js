@@ -70,7 +70,7 @@ loginForm.addEventListener(
 
             const response =
                 await fetch(
-                    "http://127.0.0.1:8000/auth/login",
+                    "https://tietnexus-api.onrender.com/auth/login",
                     {
                         method: "POST",
 
@@ -158,7 +158,7 @@ signupForm.addEventListener(
 
             const response =
                 await fetch(
-                    "http://127.0.0.1:8000/auth/signup",
+                    "https://tietnexus-api.onrender.com/auth/signup",
                     {
                         method: "POST",
 

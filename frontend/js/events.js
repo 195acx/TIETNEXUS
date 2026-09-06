@@ -7,7 +7,7 @@ async function loadEvents() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/events"
+            "https://tietnexus-api.onrender.com/events"
         );
 
 
@@ -157,7 +157,7 @@ async function registerForEvent(eventId) {
 
         const response = await fetch(
 
-            `http://127.0.0.1:8000/events/${eventId}/register`,
+            `https://tietnexus-api.onrender.com/events/${eventId}/register`,
 
             {
                 method: "POST",
