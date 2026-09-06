@@ -276,43 +276,25 @@ a {
 }
 
 
+/* =========================================
+   3D THAPAR LOGO
+========================================= */
+
 .logo-orbit {
-
     width: 330px;
-
     height: 330px;
 
-    border:
-
-        1px solid var(--border);
-
     border-radius: 50%;
+
+    border: 1px solid rgba(237, 235, 221, 0.25);
 
     display: flex;
-
+    align-items: center;
     justify-content: center;
 
-    align-items: center;
+    perspective: 1000px;
 
-    position: relative;
-}
-
-
-.logo-orbit::before {
-
-    content: "";
-
-    position: absolute;
-
-    width: 390px;
-
-    height: 390px;
-
-    border:
-
-        1px solid rgba(129, 1, 0, 0.3);
-
-    border-radius: 50%;
+    animation: orbitFloat 5s ease-in-out infinite;
 }
 
 
@@ -320,23 +302,99 @@ a {
     width: 230px;
     height: 230px;
 
-    border: 1px solid rgba(237, 235, 221, 0.18);
     border-radius: 50%;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
-    overflow: hidden;
-    position: relative;
+    transform-style: preserve-3d;
+
+    perspective: 1000px;
 }
 
+
 .logo-core img {
-    width: 65%;
-    height: 65%;
+    width: 85%;
+    height: 85%;
 
     object-fit: contain;
-    display: block;
+
+    transform-style: preserve-3d;
+
+    animation: logo3DRotate 4s linear infinite;
+
+    backface-visibility: visible;
+
+    filter: drop-shadow(
+        0 0 12px rgba(237, 235, 221, 0.18)
+    );
+}
+
+
+/* =========================================
+   3D ROTATION
+========================================= */
+
+@keyframes logo3DRotate {
+
+    0% {
+        transform:
+            rotateY(0deg)
+            rotateX(0deg);
+    }
+
+    25% {
+        transform:
+            rotateY(90deg)
+            rotateX(5deg);
+    }
+
+    50% {
+        transform:
+            rotateY(180deg)
+            rotateX(0deg);
+    }
+
+    75% {
+        transform:
+            rotateY(270deg)
+            rotateX(-5deg);
+    }
+
+    100% {
+        transform:
+            rotateY(360deg)
+            rotateX(0deg);
+    }
+
+}
+
+
+/* =========================================
+   SUBTLE FLOATING MOTION
+========================================= */
+
+@keyframes orbitFloat {
+
+    0% {
+        transform:
+            translateY(0px)
+            rotateZ(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(-8px)
+            rotateZ(1deg);
+    }
+
+    100% {
+        transform:
+            translateY(0px)
+            rotateZ(0deg);
+    }
+
 }
 
 

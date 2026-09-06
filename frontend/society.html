@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Society | TIET NExus</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/animations.css"
+    >
+
+</head>
+
+
+<body>
+
+    <div class="page">
+
+
+        <!-- =========================
+             NAVIGATION
+        ========================== -->
+
+        <nav class="navbar">
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+                TIET
+                <span>NExus</span>
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="societies.html">
+                    Societies
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+                <a href="guide.html">
+                    AI Guide
+                </a>
+
+                <a
+                    href="login.html"
+                    class="login-link"
+                >
+                    Login
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- =========================
+             BACK BUTTON
+        ========================== -->
+
+        <main class="society-detail-page">
+
+            <a
+                href="societies.html"
+                class="back-link"
+            >
+                ← BACK TO SOCIETIES
+            </a>
+
+
+
+            <!-- =========================
+                 LOADING STATE
+            ========================== -->
+
+            <section
+                id="societyLoading"
+                class="society-loading"
+            >
+
+                <p>
+                    Loading society...
+                </p>
+
+            </section>
+
+
+
+            <!-- =========================
+                 SOCIETY CONTENT
+            ========================== -->
+
+            <section
+                id="societyContent"
+                class="society-detail"
+                style="display: none;"
+            >
+
+
+                <!-- LABEL -->
+
+                <p
+                    id="societyCategory"
+                    class="page-label"
+                >
+                    CATEGORY
+                </p>
+
+
+
+                <!-- NAME -->
+
+                <h1
+                    id="societyName"
+                    class="society-detail-title"
+                >
+                    SOCIETY.
+                </h1>
+
+
+
+                <!-- DESCRIPTION -->
+
+                <p
+                    id="societyDescription"
+                    class="society-detail-description"
+                >
+                </p>
+
+
+
+                <!-- =========================
+                     ABOUT
+                ========================== -->
+
+                <div class="society-detail-section">
+
+                    <p class="section-label">
+                        ABOUT
+                    </p>
+
+                    <p
+                        id="societyAbout"
+                        class="section-text"
+                    >
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================
+                     RECRUITMENT
+                ========================== -->
+
+                <div class="society-detail-section">
+
+                    <p class="section-label">
+                        RECRUITMENT
+                    </p>
+
+                    <p
+                        id="societyRecruitment"
+                        class="section-text"
+                    >
+                        Recruitment information
+                        will be updated soon.
+                    </p>
+
+                </div>
+
+
+
+                <!-- =========================
+                     CONTACT
+                ========================== -->
+
+                <div class="society-detail-section">
+
+                    <p class="section-label">
+                        CONTACT
+                    </p>
+
+
+                    <div class="society-contact">
+
+                        <a
+                            id="societyEmail"
+                            href="#"
+                        >
+                            Email
+                        </a>
+
+
+                        <a
+                            id="societyInstagram"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="display: none;"
+                        >
+                            Instagram
+                        </a>
+
+
+                        <a
+                            id="societyWebsite"
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style="display: none;"
+                        >
+                            Website
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     ERROR
+                ========================== -->
+
+                <div
+                    id="societyError"
+                    class="error-message"
+                    style="display: none;"
+                >
+                    Unable to load society.
+                </div>
+
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/society.js"></script>
+
+
+</body>
+
+</html>

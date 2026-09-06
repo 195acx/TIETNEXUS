@@ -10,9 +10,7 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>
-        Events | Campus Companion
-    </title>
+    <title>Events | TIET NExus</title>
 
     <link
         rel="stylesheet"
@@ -29,70 +27,116 @@
 
 <body>
 
-<div class="page">
-
-    <nav class="navbar">
-
-        <a
-            href="index.html"
-            class="brand"
-        >
-
-            CAMPUS
-            <span>COMPANION</span>
-
-        </a>
+    <div class="page">
 
 
-        <div class="nav-links">
+        <!-- =========================
+             NAVIGATION
+        ========================== -->
 
-            <a href="societies.html">
-                Societies
+        <nav class="navbar">
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+                TIET
+                <span>NExus</span>
             </a>
 
-            <a href="events.html">
-                Events
-            </a>
 
-            <a href="guide.html">
-                AI Guide
-            </a>
+            <div class="nav-links">
 
-        </div>
+                <a href="societies.html">
+                    Societies
+                </a>
 
-    </nav>
+                <a href="events.html">
+                    Events
+                </a>
 
+                <a href="guide.html">
+                    AI Guide
+                </a>
 
-    <header class="page-header">
+                <a
+                    href="login.html"
+                    class="login-link"
+                >
+                    Login
+                </a>
 
-        <p class="page-label">
-            CAMPUS CALENDAR
-        </p>
+            </div>
 
-        <h1 class="page-title">
-            EVENTS.
-        </h1>
-
-        <p class="page-subtitle">
-            Everything happening around
-            campus, without hunting through
-            ten different Instagram pages.
-        </p>
-
-    </header>
+        </nav>
 
 
-    <main>
 
-        <section
-            id="eventList"
-            class="event-list"
-        >
-        </section>
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
 
-    </main>
+        <header class="page-header">
 
-</div>
+            <p class="page-label">
+                WHAT'S HAPPENING
+            </p>
+
+
+            <h1 class="page-title">
+                EVENTS.
+            </h1>
+
+
+            <p class="page-subtitle">
+
+                Discover workshops,
+                competitions, meetups,
+                performances and everything
+                happening around campus.
+
+            </p>
+
+        </header>
+
+
+
+        <!-- =========================
+             EVENTS
+        ========================== -->
+
+        <main>
+
+            <section
+                id="eventList"
+                class="event-list"
+            >
+
+                <div class="loading-message">
+                    Loading events...
+                </div>
+
+            </section>
+
+        </main>
+
+
+    </div>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/events.js"></script>
+
+
+</body>
+
+</html>
 
 
 <script src="js/main.js"></script>

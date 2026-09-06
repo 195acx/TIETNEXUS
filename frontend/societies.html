@@ -2,60 +2,113 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Societies | TIET NExus</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <title>Societies | TIET Nexus</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/animations.css"
+    >
+
 </head>
+
 
 <body>
 
     <div class="page">
 
+
+        <!-- =========================
+             NAVIGATION
+        ========================== -->
+
         <nav class="navbar">
 
-            <a href="index.html" class="brand">
+            <a
+                href="index.html"
+                class="brand"
+            >
                 TIET
                 <span>NExus</span>
             </a>
 
+
             <div class="nav-links">
 
-                <a href="societies.html">Societies</a>
+                <a href="societies.html">
+                    Societies
+                </a>
 
-                <a href="events.html">Events</a>
+                <a href="events.html">
+                    Events
+                </a>
 
-                <a href="guide.html">AI Guide</a>
+                <a href="guide.html">
+                    AI Guide
+                </a>
 
-                <a href="#" class="login-link">Login</a>
+                <a
+                    href="login.html"
+                    class="login-link"
+                >
+                    Login
+                </a>
 
             </div>
 
         </nav>
 
 
+
+        <!-- =========================
+             PAGE HEADER
+        ========================== -->
+
         <header class="page-header">
 
-            <p class="page-label">DISCOVER</p>
+            <p class="page-label">
+                DISCOVER
+            </p>
+
 
             <h1 class="page-title">
                 SOCIETIES.
             </h1>
 
+
             <p class="page-subtitle">
+
                 Find your people.
                 Discover communities built around
                 technology, culture, creativity,
                 entrepreneurship and more.
+
             </p>
 
         </header>
 
 
+
+        <!-- =========================
+             MAIN CONTENT
+        ========================== -->
+
         <main>
+
+
+            <!-- SEARCH -->
 
             <div class="search-container">
 
@@ -63,58 +116,103 @@
                     id="societySearch"
                     type="text"
                     placeholder="Search societies..."
+                    autocomplete="off"
                 >
 
             </div>
 
 
+
+            <!-- FILTERS -->
+
             <div class="filters">
 
                 <button
                     class="filter active"
-                    data-category="All">
+                    data-category="All"
+                    type="button"
+                >
                     ALL
                 </button>
 
-                <button
-                    class="filter"
-                    data-category="Technology">
-                    TECH
-                </button>
 
                 <button
                     class="filter"
-                    data-category="Cultural">
+                    data-category="Technical / Academic"
+                    type="button"
+                >
+                    TECHNICAL
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Cultural / Visual Arts"
+                    type="button"
+                >
                     CULTURAL
                 </button>
 
-                <button
-                    class="filter"
-                    data-category="Entrepreneurship">
-                    ENTREPRENEURSHIP
-                </button>
 
                 <button
                     class="filter"
-                    data-category="Sports">
-                    SPORTS
+                    data-category="Debate / Literary"
+                    type="button"
+                >
+                    DEBATE &amp; LITERARY
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Entrepreneurship"
+                    type="button"
+                >
+                    ENTREPRENEURSHIP
+                </button>
+
+
+                <button
+                    class="filter"
+                    data-category="Social"
+                    type="button"
+                >
+                    SOCIAL
                 </button>
 
             </div>
 
 
+
+            <!-- SOCIETY LIST -->
+
             <section
                 id="societyList"
-                class="society-list">
+                class="society-list"
+            >
+
+                <div class="loading-message">
+                    Loading societies...
+                </div>
+
             </section>
 
+
         </main>
+
 
     </div>
 
 
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script src="js/main.js"></script>
+
     <script src="js/societies.js"></script>
+
 
 </body>
 
